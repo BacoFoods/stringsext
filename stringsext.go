@@ -42,3 +42,9 @@ func CapitalizeWords(s string) string {
 
 	return strings.Join(words, " ")
 }
+
+// ContainsIgnoreCase reports whether the string s contains the substring substr,
+// ignoring case.
+func ContainsIgnoreCase(s, substr string) bool {
+	return strings.Contains(strings.ToLower(s), strings.ToLower(substr))
+}
